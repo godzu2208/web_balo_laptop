@@ -1,0 +1,323 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    margin: 0px;
+    padding: 0px;
+    height: 35px;
+    z-index: 100;
+}
+
+.h1{
+    width: 100%;
+    height: 35px;
+}
+.container{
+    background-color: black;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+#menu{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+}
+#menu li a{
+    padding: 5px 15px;
+}
+#menu li, a {
+    text-decoration: none;
+    color: white;
+}
+
+.lo123{
+    text-align: center;
+}
+
+.lo123 i{
+    color: yellow;
+    font-size: 20px; 
+    margin: 0 0 0 8px;
+}
+
+.lo123 span{
+    font-weight: bold;
+}
+.search{
+    position: relative;
+}
+.search i{
+    position: absolute;
+    font-size: 20px;
+    right: 10px;
+    color: black;
+    line-height: 40px;
+    cursor: pointer;
+   
+}
+.search-box{
+    height: 30px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+
+
+
+.box1{
+    border-radius: 5px;
+}
+
+.box1 i{
+    margin-right: 30px;
+}
+
+.box1 :hover{
+    background-color: rgb(163, 161, 160);
+}
+.cart > button{
+    height: 30px;
+    padding: 0 12px;
+    cursor: pointer;
+    border: 1px solid rgb(117, 107, 107);
+    border-radius: 5px;
+    color: white;
+    background-color: transparent;
+    transition: all 0.3 ease;
+}
+.cart > button i{
+    margin-right: 6px;
+}
+
+.cart > button:hover{
+    background-color: rgb(130, 126, 126);
+}
+
+
+
+.address-form{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #333;
+    display: none;
+    z-index: 999;
+}
+
+.address-form-content{
+    width: 450px;
+    height: 420px;
+    background-color: #dfdfdf;
+    border-radius: 5px;
+}
+.address-form-content form {
+    padding: 10px 40px;
+}
+
+.address-form-content h2 {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid #a6a6a6;
+    position: relative;
+    padding: 10px;
+}
+.address-form-content h2 span{
+    display: block;
+    position: absolute;
+    height: 30px;
+    padding: 0 6px;
+    border: 1px solid #878787;
+    right: 12px;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 30px;
+    color: #4834ca;
+    border-radius: 5px;
+}
+
+.address-form-content > form > p{
+    font-size: 16px;
+}
+.address-form-content > form > input,select {
+    height: 45  px;
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.address-form-content > form > button{
+    margin-top: 30px;
+    height: 40px;
+    width: 80%;
+    background-color: orange;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+/* ---------sign up------ */
+/* Full-width input fields */
+input[type=text] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 15px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+.checkbox_gt{
+    border: 1px solid #f1f1f1;
+    margin: 10px 0px;
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+.st_checkbox{
+    border: 1px solid #f1f1f1;
+    margin: 10px 0px;
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+  /* address form */
+#address_option{
+    width: 100%;
+    border: none;
+    background: #f1f1f1;
+    border-radius: 5px;
+    height: 40px;
+    display: block;
+    margin: 10px 0px;
+    border-radius: 5px;
+    padding: 10px;
+}
+  /* Note */
+#note{
+    height: 100px;
+}
+  /* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+  
+  /* Set a style for all buttons */
+.signup {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 10px;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    opacity: 0.9;
+}
+  
+.signup:hover {
+    opacity:1;
+}
+    
+  /* Float cancel and signup buttons and add an equal width */
+.signupbtn {
+    float: left;
+    width: 200px;
+    
+}
+  
+  /* Add padding to container elements */
+.containner {
+    padding: 16px;
+}
+  
+  /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #474e5d;
+    padding-top: 50px;
+}
+  
+  /* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+  
+  /* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+  
+  /* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+  }
+  
+.close:hover, .close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+      width: 100%;
+  }
+  }
+  
+.form-field.error input {
+    border-color: var(--error-color) ;
+    background-color: rgb(232, 135, 135);
+  }
+  
+.form-field.success input {
+    border-color: var(--success-color);
+    color: green ;
+    background-color: #ddd;
+}
+   
+  
+.form-field small {
+    color: var(--error-color);
+}
